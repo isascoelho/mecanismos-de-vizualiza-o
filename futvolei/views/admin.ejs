@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg, #ff4fa3, #ff8ac7);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .admin-container{
+      background:white;
+      padding:40px;
+      border-radius:12px;
+      width:600px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.2);
+      text-align:center;
+    }
+
+    h1{
+      color:#e91e63;
+      margin-bottom:10px;
+    }
+
+    p{
+      font-size:18px;
+      color:#555;
+    }
+
+    p span{
+      color:#e91e63;
+      font-weight:bold;
+    }
+
+    .admin-content{
+      margin-top:30px;
+      padding:20px;
+      border-radius:8px;
+      background:#fff0f6;
+      border:1px solid #ffd1e6;
+    }
+
+    button{
+      margin-top:20px;
+      background:#e91e63;
+      border:none;
+      color:white;
+      padding:10px 18px;
+      border-radius:6px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#c2185b;
+      transform:scale(1.05);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="admin-container">
+    <h1><%= title %></h1>
+
+    <p>Veja nossas <span><%= title %></span> disponíveis</p>
+
+    <div class="admin-content">
+      Área administrativa do sistema
+      <br>
+      Gerencie conteúdos, cadastros e configurações aqui.
+      <br>
+      <button>Gerenciar</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
